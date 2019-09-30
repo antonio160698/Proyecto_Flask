@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{length}}</h1>
+<table class="ui celled padded table">
+        <thead>
+                <tr><th>Alumno</th>
+                <th>Matricula</th>
+              </tr></thead>
+        <tbody>
+{% for i in range(length) %}
+<tr>
+    <td data-label="Alumno">
+        {{before['grupo'][i]}}
+    </td>
+    <td data-label="Matricula">
+        {{before['dia'][i]}}
+    </td>
+    <td data-label="fgfgf">
+            {{before['clave'][i]}}
+        </td>
+        <td data-label="fgfgf">
+                {{before['empleado_clave'][i]}}
+            </td>
+            <td data-label="fgfgf">
+                    {{before['hora'][i]}}
+                </td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<h1></h1>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{author['full_name']}}</title>
+        <style>
+            img{
+                width:40%;
+                height: 50%;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{author['full_name']}}</h1>
+        <img src="{{author['picture']}}">
+        <p><b>Nationality:</b> {{author['nationality']}}</p>
+        <p><b>Notable Work:</b> {{author['notable_work']}}</p>
+        <p><b>Born:</b> {{author['born']}}</p>
+    </body>
+</html>
